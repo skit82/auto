@@ -1,5 +1,21 @@
 .footer {
-  padding: 40px 0;
+  background-color: $color-black;
 
-  background-color: $color-neon-blue;
+  // &__section {
+    // position: relative;
+  // }
+
+  // &__section--row-3 {
+    // &::after {
+      // position: absolute;
+      // content: "";
+      // width: 100vw;
+      // height: 1px;
+      // left: 50%;
+      // bottom: 0;
+      // transform: translateX(-50%);
+      // background-color: $white-line;
+      // transform: translateX(-50.6%);
+    // }
+  // }
 }

@@ -1,0 +1,24 @@
+.social-info {
+
+  &__content {
+    position: relative;
+    width: 187px;
+    min-height: 137px;
+    flex-shrink: 0;
+
+    background: $color-black-2;
+    border-radius: 10px;
+  }
+
+  &__content--telegram {
+
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

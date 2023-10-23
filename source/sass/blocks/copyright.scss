@@ -1,0 +1,53 @@
+.copyright {
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 1px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: $white-line;
+    transform: translateX(-50.6%);
+  }
+
+  &__content {
+    padding-top: 30px;
+    padding-bottom: 36px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    padding: 0;
+    margin:  0;
+
+    font-size: 18px;
+    font-family: $ff-halvar;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: capitalize;
+  }
+
+  &__link {
+    font-size: 18px;
+    font-family: $ff-halvar;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: capitalize;
+
+    color: $color-default-white;
+    transition: opacity 0.2s ease;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:focus,
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
