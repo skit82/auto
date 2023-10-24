@@ -1,0 +1,20 @@
+.footer-info {
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      height: 1px;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      background-color: $white-line;
+      transform: translateX(-50.6%);
+    }
+  }
+}

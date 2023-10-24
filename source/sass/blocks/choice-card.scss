@@ -1,0 +1,26 @@
+.choice-card {
+
+  &__title {
+    text-align: center;
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    max-width: 810px;
+    margin: 0 auto;
+
+    p {
+      margin: 0;
+      margin-bottom: 60px;
+      padding: 0;
+
+      font-size: 18px;
+      font-family: $ff-halvar;
+      line-height: 28px;
+      font-weight: 400px;
+
+      text-transform: capitalize;
+      text-align: center;
+    }
+  }
+}

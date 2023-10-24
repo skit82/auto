@@ -1,17 +1,78 @@
 .social-info {
+  max-width: 415px;
+  width: 100%;
+  padding-top: 52px;
+  padding-bottom: 67px;
+
+  p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 16px;
+    font-family: $ff-halvar;
+    color: $white-line;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
 
   &__content {
     position: relative;
     width: 187px;
     min-height: 137px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex-shrink: 0;
+
+    padding: 10px;
 
     background: $color-black-2;
     border-radius: 10px;
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      font-size: 16px;
+      font-weight: 400px;
+      line-height: 16px;
+      font-family: $ff-halvar;
+      color: $color-default-white;
+    }
   }
 
   &__content--telegram {
+    background: $color-black-2;
+    transition: background $trans-default;
+    cursor: pointer;
 
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:focus,
+      &:hover {
+        background: $color-blue;
+      }
+    }
+  }
+
+  &__content--instagram {
+    background: $color-black-2;
+    transition: background $trans-default;
+    cursor: pointer;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:focus,
+      &:hover {
+        background: $color-purple-red;
+      }
+    }
   }
 
   &__link {

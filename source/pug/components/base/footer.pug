@@ -2,30 +2,32 @@ mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
       .footer__section.footer__section--row-2
-        .div.footer-info
-          .social-info
-            .social-info__wrapper
-              .social-info__content.social-info__content--telegram
-                a(href="#").social-info__link
-                +icon("icon-telegram", 40, 40)
-                p Telegram
-              .social-info__content.social-info__content--instagram
-                a(href="#").social-info__link
-                +icon("icon-inst", 40, 40)
-                p Instagram
-          .feedback
-            .feedback__form(data-validate)
-              form(action="#", method="post", data-form="feedback-form")
-                .feedback__content
-                  .feedback__title
-                    h2 Остались вопросы ?
-                  .feedback-form__item
-                    +custom-input({inputLabel: "Ваше имя", inputName: "user-name", inputMinLength: "2"})(required, autocomplete="off")
-                  .feedback-form__item
-                    +custom-input({inputLabel: "Номер телефона", inputType: "tel", inputName: "user-tel"})(required, autocomplete="off")
-                .feedback__content
-                  .feedback-form__submit
-                    +btn({text: "Отправить", type: "submit"})
+        div.footer-info
+          .footer-info__wrapper
+            .social-info
+              p Следите за нами
+              .social-info__wrapper
+                .social-info__content.social-info__content--telegram
+                  a(href="#").social-info__link
+                  +icon("icon-telegram", 40, 40)
+                  p Telegram
+                .social-info__content.social-info__content--instagram
+                  a(href="#").social-info__link
+                  +icon("icon-inst", 40, 40)
+                  p Instagram
+            .feedback
+              .feedback__form(data-validate)
+                form(action="#", method="post", data-form="feedback-form")
+                  .feedback__content
+                    .feedback__title
+                      h2 Остались вопросы ?
+                    .feedback-form__item
+                      +custom-input({inputLabel: "Ваше имя", inputName: "user-name", inputMinLength: "2"})(required, autocomplete="off")
+                    .feedback-form__item
+                      +custom-input({inputLabel: "Номер телефона", inputType: "tel", inputName: "user-tel"})(required, autocomplete="off")
+                  .feedback__content
+                    .feedback-form__submit
+                      +btn({text: "Отправить", type: "submit"})
 
       .footer__section.footer__section--row-3.copyright
         div.copyright__content

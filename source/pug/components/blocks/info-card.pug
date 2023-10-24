@@ -1,0 +1,20 @@
+mixin info-card()
+
+  .info-card
+    h2.visually-hidden Информация о картах
+    .info-card__wrapper
+      .info-card__item.info-card__item--color
+        .info-card__name
+          p Элегантный подарок на любой случай.
+      .info-card__item
+        .info-card__image
+          +picture("content", "image-3", "png", 413, 400, "Картинка")
+      .info-card__item
+        .info-card__image
+          +picture("content", "image-4", "png", 413, 650, "Картинка")
+      .info-card__item
+        .info-card__image
+          +picture("content", "image-2", "png", 413, 400, "Картинка")
+      .info-card__item.info-card__item--color
+        .info-card__name
+          p Автомобили всегда чистые и заправленные.

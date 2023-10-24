@@ -1,0 +1,5 @@
+mixin social(data)
+  .social.social--color
+    each item in data
+      a.social__link(href=item.link, aria-label=item.label)
+        +icon(item.icon, 40, 40)

@@ -1,13 +1,54 @@
 .header {
-  padding: 28px 0;
+  padding: 24px 0;
 
-  background-color: $color-neon-blue;
+  background: #1A191B;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.20);
 
   .container {
     display: flex;
+    align-items: center;
   }
 
   &__logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
     color: $color-default-white;
+  }
+
+  .header__btn {
+    margin: 0 0 0 auto;
+    flex-shrink: 0
+  }
+
+  &__btn--line {
+    display: block;
+    width: 233px;
+    min-height: 51px;
+    padding: 18px 29px;
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 0.655px;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    text-transform: uppercase;
+    border-radius: 7.281px;
+    border: 1.456px solid #FFF;
+    background: #222123;
+    box-shadow: 0px 0px 29.125px 0px rgba(0, 0, 0, 0.30);
+    cursor: pointer;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:focus,
+      &:hover {
+        opacity: 0.5;
+      }
+    }
   }
 }

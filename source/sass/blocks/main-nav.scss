@@ -10,11 +10,28 @@
   }
 
   &__item {
-    margin-right: 20px;
+    margin-right: 5px;
   }
 
   &__link {
+    padding: 41px 20px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    font-family: $ff-halvar;
     color: $color-default-white;
+
+    background: #1a191b;
+    transition: background $trans-default;
+    cursor: pointer;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &:focus,
+      &:hover {
+        background: $white-bg;
+      }
+    }
 
     &.is-active {
       opacity: 0.6;
