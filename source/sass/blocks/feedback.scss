@@ -4,11 +4,20 @@
 
   padding-bottom: 59px;
   padding-top: 52px;
+  padding-left: 40px;
 
   border-left: 1px solid $white-line;
 
   &__title {
     margin-bottom: 14px;
+  }
+
+  &__form {
+
+    form {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__text {

@@ -1,6 +1,38 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
+      .footer__section.footer__section--row-1
+        .footer__wrapper
+          .footer__content
+            .footer__logo
+              if (currentUrl === "index")
+                span.footer__logo
+                  +icon("icon-logo", 198, 23)
+              else
+                a.footer__logo(href="index.html", aria-label="Переход на главную")
+                +icon("icon-logo", 198, 23)
+            .footer__logo-text
+              p Аренда премиальных автомобилей в Москве
+            nav.footer__nav
+              ul.footer__nav-list
+                li.footer__nav-item
+                  a(href="#") Автомобили
+                li.footer__nav-item
+                  a(href="#") Покупка авто
+                li.footer__nav-item
+                  a(href="#") Личная охрана
+                li.footer__nav-item
+                  a(href="#") Клубные карты
+          .footer__contact
+            .footer__contact-top
+              .footer__phone
+                span Телефон
+                a(href="tel:+70000000000") +7 (000) 000-00-00
+                p Работаем круглосуточно
+              +social(socialIcon).footer__social
+            .footer__contact-bottom
+              span Адрес
+              p Москва, Проспект Вернадского 12д
       .footer__section.footer__section--row-2
         div.footer-info
           .footer-info__wrapper
@@ -30,7 +62,9 @@ mixin footer(footerMods)
                         +custom-input({inputLabel: "Номер телефона", inputType: "tel", inputName: "user-tel"})(required, autocomplete="off")
                   .feedback__content
                     .feedback-form__submit
-                      +btn({text: "Отправить", type: "submit"})
+                      +icon("icon-ellipse", 169, 169)
+                        span
+                          +btn({text: "Отправить", type: "submit"})
 
       .footer__section.footer__section--row-3.copyright
         div.copyright__content

@@ -1,0 +1,16 @@
+.personal-rates {
+  margin-bottom: 150px;
+
+  &__title {
+    max-width: 1080px;
+    width: 100%;
+
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  &__img {
+    background: url("../img/content/img-6.png"), lightgray -63.814px -67.642px / 143.521% 165.37% no-repeat;
+  }
+}

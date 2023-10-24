@@ -9,8 +9,10 @@ mixin custom-input(options = {})
   - const inputMaxLength = options.inputMaxLength ? options.inputMaxLength : false
   - const inputAccept = options.inputAccept ? options.inputAccept : false
 
-  .custom-input&attributes(attributes)
+  .custom-input
     label
+      input(type=inputType, id=inputId, name=inputName, value=inputValue, minlength=inputMinLength, maxlength=inputMaxLength, placeholder=inputPlaceholder, data-form="input")&attributes(attributes)
       if inputLabel
-        span.custom-input__label!= inputLabel
-      input(type=inputType, id=inputId, name=inputName, value=inputValue, minlength=inputMinLength, maxlength=inputMaxLength, placeholder=inputPlaceholder, accept=inputAccept)
+        span.custom-input__label(data-form="label")!=inputLabel
+    if inputError
+      .custom-input__error!=inputError

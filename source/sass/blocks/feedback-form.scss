@@ -1,7 +1,8 @@
 .feedback-form {
   form {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
+    justify-content: space-between;
     width: 100%;
 
     // background-color: $color-default-white;
