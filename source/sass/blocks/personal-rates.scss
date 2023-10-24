@@ -10,7 +10,120 @@
     margin-bottom: 60px;
   }
 
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+  }
+
+  &__name {
+    color: $color-default-white;
+    font-family: $ff-euro;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 127.273% */
+    letter-spacing: 0.44px;
+    text-transform: capitalize;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
   &__img {
-    background: url("../img/content/img-6.png"), lightgray -63.814px -67.642px / 143.521% 165.37% no-repeat;
+    margin: auto;
+    padding: 10px 0;
+  }
+
+  &__cost {
+    margin-top: auto;
+
+    del {
+      color: $white-line;
+    }
+
+    span {
+      display: block;
+      color: $white-line;
+      margin-bottom: 10px;
+
+      font-family: $ff-halvar;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 155.556% */
+      letter-spacing: 0.36px;
+      text-decoration-line: strikethrough;
+      text-transform: capitalize;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      color: $color-default-white;
+      font-family: $ff-halvar;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 116.667% */
+      letter-spacing: 0.48px;
+      text-transform: capitalize;
+    }
+  }
+
+  &__descr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &__text {
+    p {
+      margin: 0;
+      padding: 0;
+
+      color: $color-default-white;
+      text-align: center;
+      font-family: $ff-halvar;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px; /* 137.5% */
+      text-transform: capitalize;
+    }
+  }
+
+  &__number {
+    p {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 10px;
+
+      color: $color-default-white;
+      text-align: center;
+      font-family: $ff-euro;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 22px; /* 61.111% */
+      text-transform: capitalize;
+    }
+  }
+
+  &__content {
+    position: relative;
+    right: 50%;
   }
 }

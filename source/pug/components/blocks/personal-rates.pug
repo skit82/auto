@@ -11,23 +11,37 @@ mixin personal-rates()
               .personal-rates__name
                 p Rolls-Royce Wraith
               .personal-rates__img
+                +picture("content", "image-6", "png", 261, 164, "Картинка")
               .personal-rates__cost
-                span 79.000 руб/сутки
+                del
+                  span 79.000 руб/сутки
                 p 49.000 руб/сутки
           li.personal-rates__item
             .personal-rates__card
               .personal-rates__name
-                p
+                p Mercedes - Benz G
               .personal-rates__img
+                +picture("content", "image-7", "png", 275, 195, "Картинка")
               .personal-rates__cost
-                span
-                p
+                del
+                  span 54.000 руб/сутки
+                p 29.000 руб/сутки
           li.personal-rates__item
             .personal-rates__card
               .personal-rates__name
-                p
+                p Dodge Challenger SRT
               .personal-rates__img
+                +picture("content", "image-11", "png", 272, 137, "Картинка")
               .personal-rates__cost
-                span
-                p
+                del
+                  span 20.000 руб/сутки
+                p 11.900 руб/сутки
           li.personal-rates__item
+            .personal-rates__descr
+              .personal-rates__icon
+                +icon("icon-ellipse1", 227, 227)
+              .personal-rates__content
+                .personal-rates__number
+                  p 20+
+                .personal-rates__text
+                  p автомобилей в аренду со скидкой до 40%
