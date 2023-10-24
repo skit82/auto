@@ -6,4 +6,28 @@
   padding-top: 52px;
 
   border-left: 1px solid $white-line;
+
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    max-width: 450px;
+    width: 100%;
+
+    margin-bottom: 50px;
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      text-transform: capitalize;
+
+      font-family: $ff-halvar;
+      color: $color-default-white;
+    }
+  }
 }

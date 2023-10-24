@@ -20,11 +20,14 @@ mixin footer(footerMods)
                 form(action="#", method="post", data-form="feedback-form")
                   .feedback__content
                     .feedback__title
-                      h2 Остались вопросы ?
-                    .feedback-form__item
-                      +custom-input({inputLabel: "Ваше имя", inputName: "user-name", inputMinLength: "2"})(required, autocomplete="off")
-                    .feedback-form__item
-                      +custom-input({inputLabel: "Номер телефона", inputType: "tel", inputName: "user-tel"})(required, autocomplete="off")
+                      h2.title.title--lg Остались вопросы ?
+                    .feedback__text
+                      p Отправьте заявку и наш эксперт свяжется с Вами в ближайшее время
+                    .feedback-form__box
+                      .feedback-form__item
+                        +custom-input({inputLabel: "Ваше имя", inputName: "user-name", inputMinLength: "2"})(required, autocomplete="off")
+                      .feedback-form__item
+                        +custom-input({inputLabel: "Номер телефона", inputType: "tel", inputName: "user-tel"})(required, autocomplete="off")
                   .feedback__content
                     .feedback-form__submit
                       +btn({text: "Отправить", type: "submit"})

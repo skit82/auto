@@ -3,7 +3,7 @@
 
   font-size: 54px;
   font-weight: 500;
-  line-height: 54px;
+  line-height: normal;
   text-transform: uppercase;
   font-family: $ff-euro;
 
@@ -11,7 +11,7 @@
 
   &--lg {
     font-size: 32px;
-    line-height: 32px;
+    line-height: normal;
     letter-spacing: 1.6px;
     line-height: 32px;
   }

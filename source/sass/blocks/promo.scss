@@ -1,9 +1,52 @@
 .promo {
   padding-top: 77px;
+  margin-bottom: 145px;
 
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    max-width: 527px;
+    width: 100%;
+
+    margin-bottom: 50px;
+
+    p {
+      margin: 0;
+      padding: 0;
+
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      text-transform: capitalize;
+      font-family: $ff-halvar;
+
+      color: $color-default-white;
+    }
+  }
+
+  &__card-item {
+    flex-basis: calc(33.33333% - 30px);
+    flex-shrink: 0;
+    border-radius: 13.031px;
+    background: #222123;
+  }
+
+  &__card-img {
+    width: 273.656px;
+    height: 273.656px;
+    transform: rotate(30deg);
+    flex-shrink: 0;
+
+    border-radius: 17.859px;
+    background: linear-gradient(180deg, #FFBF00 48.03%, #FFC928 85.14%);
+    box-shadow: 0px 0px 29.76563px 0px rgba(0, 0, 0, 0.30);
   }
 }

@@ -2,6 +2,7 @@ import {mobileVhFix} from './utils/mobile-vh-fix.js';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {CustomSelect} from './modules/select/custom-select';
+import {initFeedbackForm} from './modules/modals/init-feedback-form';
 import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
 
 // ---------------------------------
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initFeedbackForm();
   });
 });
 

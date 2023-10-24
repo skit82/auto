@@ -1,0 +1,63 @@
+.feedback-form {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    // background-color: $color-default-white;
+
+    input {
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+    }
+  }
+}
+
+.feedback-form__box {
+  display: flex;
+}
+
+.feedback-form__item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.feedback-form__submit {
+  margin-top: 30px;
+
+  @include vp-767 {
+    margin-top: 29px;
+  }
+
+  .btn {
+    letter-spacing: -0.05em;
+
+    @include vp-1023 {
+      font-size: 16px;
+      line-height: 125%;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 129%;
+    }
+  }
+
+  p {
+    margin-top: 18px;
+
+    font-size: 12px;
+    line-height: 125%;
+    font-weight: 600;
+
+    @include vp-767 {
+      margin-top: 9px;
+
+      font-size: 10px;
+      line-height: 120%;
+    }
+  }
+}
