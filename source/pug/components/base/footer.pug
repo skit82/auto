@@ -62,9 +62,7 @@ mixin footer(footerMods)
                         +custom-input({inputLabel: "Номер телефона", inputType: "tel", inputName: "user-tel"})(required, autocomplete="off")
                   .feedback__content
                     .feedback-form__submit
-                      +icon("icon-ellipse", 169, 169)
-                        span
-                          +btn({text: "Отправить", type: "submit"})
+                      +btn({text: "Отправить", type: "submit"}).feedback-form__btn
 
       .footer__section.footer__section--row-3.copyright
         div.copyright__content

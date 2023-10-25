@@ -1,6 +1,7 @@
 .main-nav {
   &__list {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     margin-right: 20px;
     margin-left: 60px;
@@ -14,7 +15,7 @@
   }
 
   &__link {
-    padding: 41px 20px;
+    padding: 0 20px;
 
     font-size: 16px;
     font-weight: 400;
@@ -22,16 +23,18 @@
     font-family: $ff-halvar;
     color: $color-default-white;
 
-    background: #1a191b;
-    transition: background $trans-default;
+    // background: #1a191b;
+    // transition: background $trans-default;
     cursor: pointer;
 
-    @media (hover: hover), screen and (min-width: 0\0) {
-      &:focus,
-      &:hover {
-        background: $white-bg;
+    transition: opacity 0.2s ease;
+
+      @media (hover: hover), screen and (min-width: 0\0) {
+        &:focus,
+        &:hover {
+          opacity: 0.5;
+        }
       }
-    }
 
     &.is-active {
       opacity: 0.6;
