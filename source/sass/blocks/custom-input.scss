@@ -25,6 +25,10 @@
     transition: border-color $trans-default;
     cursor: text;
 
+    @include vp-1023 {
+      max-width: 100%;
+    }
+
     @media (hover: hover), screen and (min-width: 0\0) {
       &:hover {
         .custom-input__label {
@@ -63,6 +67,10 @@
       border-bottom: 2px solid $color-default-white;
       // border-radius: 5px;
       outline: none;
+
+      @include vp-1023 {
+        max-width: 100%;
+      }
     }
 
     input:-webkit-autofill {

@@ -19,7 +19,7 @@ mixin header(headerMods, currentUrl)
       },
     ]
 
-  header.header(class=headerMods)
+  header.header(class=headerMods, data-mob-menu="burger-mod", data-fix-block)
     .container
       if(currentUrl === "index.html")
         //- lighthouse снимает 10 баллов SEO за <a> без href
@@ -28,18 +28,27 @@ mixin header(headerMods, currentUrl)
       else
         a.header__logo(href="index.html", aria-label="Переход на главную")
           +icon("icon-logo", 168, 19)
-      nav.main-nav
-        button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
-          +icon("icon-burger", 20, 20)
-        .main-nav__wrapper
-          ul.main-nav__list
-            each link in headerLinks
-              - const activeState = currentUrl === link.href
-              li.main-nav__item
-                if(activeState)
-                  span.main-nav__link.is-active= link.text
-                else
-                  a.main-nav__link(href=link.href)= link.text
+      button.header__menu-toggle(type="button", aria-label="Переключатель отображения меню", aria-pressed="false", data-mob-menu="menu-toggle")
+        span
+        span
+      .header__wrapper(data-mob-menu="burger-mod")
+        if(currentUrl === "index.html")
+          //- lighthouse снимает 10 баллов SEO за <a> без href
+          span.header__logo(data-mob-menu="burger-mod")
+            +icon("icon-logo", 168, 19)
+        else
+          a.header__logo(href="index.html", aria-label="Переход на главную", data-mob-menu="burger-mod")
+          +icon("icon-logo", 168, 19)
+        nav.header__nav(data-mob-menu="burger-mod")
+          .header__nav-wrapper
+            ul.header__main-menu(data-dropdown="block-left-parent")
+              each link in headerLinks
+                - const activeState = currentUrl === link.href
+                li.header__main-menu-item
+                  if(activeState)
+                    a.header__main-menu-link.is-active(href=link.href, data-dropdown="trigger")=link.text
+                  else
+                    a.header__main-menu-link(href=link.href, data-dropdown="trigger")=link.text
       +social(socialIcon)
       a.header__btn.header__btn--line(href="#")
         span Связаться с нами

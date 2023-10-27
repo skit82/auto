@@ -4,6 +4,15 @@
   padding-top: 52px;
   padding-bottom: 67px;
 
+  @include vp-1259 {
+    max-width: 300px;
+  }
+
+  @include vp-1023 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
   p {
     padding: 0;
     margin: 0;
@@ -19,6 +28,10 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include vp-1259 {
+      flex-direction: column;
+    }
   }
 
 
@@ -37,6 +50,11 @@
     background: $color-black-2;
     border-radius: 10px;
 
+    @include vp-1259 {
+      max-width: 270px;
+      width: 100%;
+    }
+
     p {
       margin: 0;
       padding: 0;
@@ -54,11 +72,16 @@
     transition: background $trans-default;
     cursor: pointer;
 
+
     @media (hover: hover), screen and (min-width: 0\0) {
       &:focus,
       &:hover {
         background: $color-blue;
       }
+    }
+
+    @include vp-1259 {
+      margin-bottom: 15px;
     }
   }
 

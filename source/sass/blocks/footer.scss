@@ -33,6 +33,10 @@
 
     margin-left: 150px;
     margin-right: auto;
+
+    @include vp-1259 {
+      margin-left: 50px;
+    }
   }
 
   &__logo {
@@ -64,6 +68,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include vp-1259 {
+      justify-content: flex-start;
+    }
   }
 
   &__nav-item {
@@ -73,6 +81,10 @@
     font-weight: 400;
     line-height: normal;
     margin-right: 15px;
+
+    @include vp-1259 {
+      margin-bottom: 10px;
+    }
 
     a {
       color: $color-default-white;

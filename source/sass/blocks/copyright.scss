@@ -20,6 +20,11 @@
 
     display: flex;
     justify-content: space-between;
+
+    @include vp-1023 {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 
   &__text {
@@ -31,6 +36,10 @@
     font-weight: 400;
     line-height: 28px;
     text-transform: capitalize;
+
+    @include vp-1023 {
+      margin-bottom: 10px;
+    }
   }
 
   &__link {
@@ -42,6 +51,10 @@
 
     color: $color-default-white;
     transition: opacity 0.2s ease;
+
+    @include vp-1023 {
+      margin-bottom: 10px;
+    }
 
     @media (hover: hover), screen and (min-width: 0\0) {
       &:focus,

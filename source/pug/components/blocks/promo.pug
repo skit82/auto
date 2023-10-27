@@ -9,11 +9,36 @@ mixin promo()
           .promo__text
             p Узнайте о преимуществах наших Клубных карт для аренды авто. Эксклюзивные предложения, бесплатные дни и многое другое ждут вас. Присоединяйтесь к клубу уже сегодня!
         .promo__card
-          .promo__card-item
+          .promo__card-item.promo__card-item--1
+            .promo__card-img
+              +img("content", "premium", "png", 417, 238, "Карта premium")
             .promo__card-content
               .promo__card-top
                 p Premium
               .promo__card-bottom
                 p Efrosin Tarasov
+          .promo__card-item.promo__card-item--2
             .promo__card-img
+              +img("content", "gold", "png", 381, 218, "Карта gold")
+            .promo__card-content
+              .promo__card-top
+                p Gold
+              .promo__card-bottom
+                p Anastasiya Zaytseva
+          .promo__card-item.promo__card-item--3
+            .promo__card-img
+              +img("content", "silver", "png", 355, 203, "Карта silver")
+            .promo__card-content
+              .promo__card-top
+                p Gold
+              .promo__card-bottom
+                p Sveta Kovaleva
+          .promo__card-item.promo__card-item--4
+            .promo__card-img
+              +img("content", "standard", "png", 340, 194, "Карта Standard")
+            .promo__card-content
+              .promo__card-top
+                p Standard
+              .promo__card-bottom
+                p Pyotr Kuznetsov
 

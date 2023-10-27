@@ -19,11 +19,19 @@
 
 .feedback-form__box {
   display: flex;
+
+  @include vp-1023 {
+    flex-direction: column;
+  }
 }
 
 .feedback-form__item {
   position: relative;
   // margin-bottom: 10px;
+
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
 }
 
 .feedback-form__submit {
@@ -39,6 +47,9 @@
     @include vp-1023 {
       font-size: 16px;
       line-height: 125%;
+      width: 149px;
+      height: 149px;
+      margin-top: 15px;
     }
 
     @include vp-767 {

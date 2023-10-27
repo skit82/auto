@@ -14,5 +14,15 @@
     line-height: normal;
     letter-spacing: 1.6px;
     line-height: normal;
+
+    @include vp-1259 {
+      font-size: 28px;
+      letter-spacing: 1.2px;
+    }
+
+    @include vp-1023 {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
   }
 }
