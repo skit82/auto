@@ -23,7 +23,7 @@ mixin header(headerMods, currentUrl)
     .container
       if(currentUrl === "index.html")
         //- lighthouse снимает 10 баллов SEO за <a> без href
-        span.header__logo
+        span.header__logo-mobile
           +icon("icon-logo", 168, 19)
       else
         a.header__logo(href="index.html", aria-label="Переход на главную")
@@ -49,6 +49,6 @@ mixin header(headerMods, currentUrl)
                     a.header__main-menu-link.is-active(href=link.href, data-dropdown="trigger")=link.text
                   else
                     a.header__main-menu-link(href=link.href, data-dropdown="trigger")=link.text
-      +social(socialIcon)
-      a.header__btn.header__btn--line(href="#")
-        span Связаться с нами
+            +social(socialIcon)
+            a.header__btn.header__btn--line(href="#")
+              span Связаться с нами

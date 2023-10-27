@@ -13,6 +13,10 @@
     padding-bottom: 20px;
   }
 
+  @include vp-767 {
+    max-width: 100%;
+  }
+
   p {
     padding: 0;
     margin: 0;
@@ -31,6 +35,12 @@
 
     @include vp-1259 {
       flex-direction: column;
+    }
+
+    @include vp-767 {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
   }
 
@@ -53,6 +63,12 @@
     @include vp-1259 {
       max-width: 270px;
       width: 100%;
+
+      min-height: 100px;
+    }
+
+    @include vp-767 {
+      max-width: 300px;
     }
 
     p {
@@ -95,6 +111,10 @@
       &:hover {
         background: $color-purple-red;
       }
+    }
+
+    @include vp-767 {
+      margin-bottom: 15px;
     }
   }
 

@@ -25,6 +25,11 @@
       flex-wrap: wrap;
       justify-content: space-around;
     }
+
+    @include vp-767 {
+      padding: 10px 0;
+      justify-content: center;
+    }
   }
 
   &__text {
@@ -40,6 +45,11 @@
     @include vp-1023 {
       margin-bottom: 10px;
     }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
 
   &__link {
@@ -54,6 +64,12 @@
 
     @include vp-1023 {
       margin-bottom: 10px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
     }
 
     @media (hover: hover), screen and (min-width: 0\0) {

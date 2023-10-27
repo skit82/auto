@@ -8,6 +8,10 @@
 
   flex-shrink: 0;
 
+  @include vp-1259 {
+    margin-bottom: 15px;
+  }
+
   &__link {
     display: flex;
 
