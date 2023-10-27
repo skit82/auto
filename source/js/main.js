@@ -5,6 +5,7 @@ import {CustomSelect} from './modules/select/custom-select';
 import {initFeedbackForm} from './modules/modals/init-feedback-form';
 import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
 import {initBurgerAction} from './modules/modals/init-burger-fction';
+import {initBackScroll} from './modules/modals/backscroll';
 
 // ---------------------------------
 
@@ -31,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initFeedbackForm();
     initBurgerAction();
+    initBackScroll();
   });
 });
 
