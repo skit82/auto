@@ -4,10 +4,13 @@ mixin promo()
     .container
       .promo__wrapper
         .promo__description
-          .promo__title
-            h1.title Стань частью клуба Logo yo
-          .promo__text
-            p Узнайте о преимуществах наших Клубных карт для аренды авто. Эксклюзивные предложения, бесплатные дни и многое другое ждут вас. Присоединяйтесь к клубу уже сегодня!
+          .promo__content
+            .promo__title(data-aos="fade-right")
+              h1.title Стань частью клуба Logo yo
+            .promo__text(data-aos="fade-left")
+              p Узнайте о преимуществах наших Клубных карт для аренды авто. Эксклюзивные предложения, бесплатные дни и многое другое ждут вас. Присоединяйтесь к клубу уже сегодня!
+          .promo__submit(data-aos="fade-right")
+            +btn({text: "Выбрать карту"}).promo__btn
         .promo__card
           .promo__card-item.promo__card-item--1
             .promo__card-img
@@ -30,7 +33,7 @@ mixin promo()
               +img("content", "silver", "png", 355, 203, "Карта silver")
             .promo__card-content
               .promo__card-top
-                p Gold
+                p Silver
               .promo__card-bottom
                 p Sveta Kovaleva
           .promo__card-item.promo__card-item--4

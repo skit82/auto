@@ -9,6 +9,26 @@
 
   color: $color-default-white;
 
+  @include vp-1299 {
+    font-size: 44px;
+  }
+
+  @include vp-1259 {
+    font-size: 54px;
+  }
+
+  @include vp-879 {
+    font-size: 40px;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+  }
+
+  @include vp-399 {
+    font-size: 27px;
+  }
+
   &--lg {
     font-size: 32px;
     line-height: normal;
